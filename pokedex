@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="./styles_finished.css">
+    <script>
+        function senddata() {
+            const url = window.location.origin;
+            inputForm = document.getElementById("inputForm");
+            data = new FormData(inputForm);
+            console.log(data);
+            
+            let errorFlag = document.createElement('h1');
+            errorFlag.id = 'errorFlag';
+            errorFlag.innerHTML = "Invalid Input";
+            let jsonData = {};
+            data.forEach(function(value, key){
+                jsonData[key] = value;
+            });
+            let json = JSON.stringify(jsonData);
+            console.log(json);            
+        }
+
+        window.addEventListener("load", e => {
+            document.getElementById("inputForm").addEventListener("submit", e => {
+                console.log(e);
+                console.log(e.submitter);
+				senddata();
+                e.preventDefault();
+            })
+        })
+    </script>
+    <body>
+        <h1>This is start page
+
+        <!-- Create form which takes input id -->
+        <!-- Send form data as JSON to GET -->
+        <!-- Get the response and if success=true, reroute -->
+        
+        <p>
+            <form action="" id="inputForm">
+                <div>
+                <label for="poke">Pokemon:</label>
+                <input type="text" accesskey="P" id="poke" name="pokename" autofocus placeholder="ditto"><br><br>
+                <input type="submit" id="submit" name="submit" value="Submit">
+                </div>
+              </form>
+        </p>
+        </h1>
+    </body>
+</html>
