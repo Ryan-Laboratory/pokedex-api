@@ -1,8 +1,12 @@
 # pokedex-api
-Utilize the free pokeapi to create a pokedex
+Utilize the free Pokeapi to create a Pokedex
 
 Goals
-Create a wrapper for the api
-Parse the data into organized text
-Create a front end that resembles a pokedex
-Have the pokedex pull up information from the organized data 
+
+1. Create a wrapper for the api
+
+2. Parse the data into organized text
+
+3. Create a front end that resembles a pokedex
+
+4. Have the pokedex pull up information from the organized data 
