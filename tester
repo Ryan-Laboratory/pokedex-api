@@ -1,0 +1,57 @@
+import Pokedex from 'pokedex-promise-v2';
+// import axios from "axios";
+import fs from 'fs';
+
+
+// this will run into cross origin or cors issues, can import wrappers to avoid or disable browser security
+// fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+//             .then(response => response.json())
+//             .then(data => {
+//                 console.log(data)
+//             }, false);
+
+// for now to keep calls to a minimum use a response file that was saved onto the computer
+const path = "./emolga.json";
+
+const P = new Pokedex();
+
+// (async () => { // with Async/Await
+//     try {
+//         const getEmolga = await P.getPokemonSpeciesByName("emolga")
+//         console.log(getEmolga)
+//     } catch (error) {
+//         throw error
+//     }
+// })()
+
+// the json file will sub for this call for now
+async function getPokemon() {
+  const getEmolga = await P.getPokemonSpeciesByName("emolga")
+  console.log(getEmolga)
+  });
+
+  if (!generateApiKeyResp.ok) {
+    throw "cannot get pokemon";
+  }
+
+  const emolgaRespJson = await getEmolgaResp.readAsJson();
+
+  if (emolgaRespJson.succeeded == "false") {
+    throw "cannot get pokemon";
+  }
+
+  return emolgaRespJson.key;
+}
+
+// do we really need to "clean" the data if it is a json?
+async function getPokedexEntry(dexEntry) {  
+  let entry = [];
+  for(let i = 0; i < entry.length; i++){
+    let entryInfo = {name: entry.name,
+      ability: entry.abilities[i].ability.name,
+      version: obj.game_indices[i].version.name
+  }
+    entry.push(entryInfo);
+  }
+  console.log(entry);
+}
