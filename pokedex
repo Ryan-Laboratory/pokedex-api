@@ -29,21 +29,36 @@
         })
     </script>
     <body>
-        <h1>This is start page
+        	<h1 class="buttonholder rows">
+        <h1>This is Emolga entry
 
         <!-- Create form which takes input id -->
         <!-- Send form data as JSON to GET -->
         <!-- Get the response and if success=true, reroute -->
+				<h1>
+					<label for="search">search</label>
+				</h1>
         
         <p>
+		<label for="pokename">English</label>
+		<label for="pokename">Mouse</label>
+		<h2>
+		<label for="typing">Electric</label>
+		</h2>
+		<h2>
+		<label for="typing2">flying</label>
+		</h2>
             <form action="" id="inputForm">
-                <div>
+                <h1 class="pokedexholder">
+				<div class="pokedexentry">
                 <label for="poke">Pokemon:</label>
                 <input type="text" accesskey="P" id="poke" name="pokename" autofocus placeholder="ditto"><br><br>
                 <input type="submit" id="submit" name="submit" value="Submit">
                 </div>
+				</h1>
               </form>
         </p>
         </h1>
+		</h1>
     </body>
 </html>
