@@ -4,21 +4,37 @@ body {
 
 h1 {
     font-weight: 300;
-    padding: 60px;
+    padding: 5px;
     text-align: center;
-    background: #2a91e6;
+    background: #3498db;
     color: white;
     font-size: 30px;
-    border: 15px solid rgb(241, 159, 91);
+    border: 5px solid #f3f3f3;
+}
+
+h2 {
+	font-weight: 300;
+    padding: 5px;
+    text-align: center;
+    background: #3498db;
+    color: white;
+    font-size: 30px;
+    border: 5px solid #f3f3f3;
 }
 
 div {
-    background-color: rgba(211, 211, 211, 0.445);
-    /* width: 300px; */
-    border: 10px solid rgb(189, 123, 0);
-    padding: 20px;
-    margin: 20px;
+    background-color: rgb(189 0 0 / 86%);
+    border: 10px solid rgb(82 2 2);
+    padding: 10px;
+    margin: 5px;
     cursor: pointer;
+}
+
+p {
+	background-color: aliceblue;
+	border: chartreuse;
+	padding: 5px;
+	margin: 5px;
 }
 
 .flex-container {
