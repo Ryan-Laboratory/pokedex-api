@@ -29,15 +29,16 @@
         })
     </script>
     <body>
-        	<h1 class="buttonholder rows">
-        <h1>This is Emolga entry
+	<h1 class="flex-container">
+        <div class="flex-item">This is Emolga entry
 
         <!-- Create form which takes input id -->
         <!-- Send form data as JSON to GET -->
         <!-- Get the response and if success=true, reroute -->
-				<h1>
-					<label for="search">search</label>
-				</h1>
+				<div class="flex-item">
+					<label for="search" >search</label>
+				</div>
+				
         
         <p>
 		<label for="pokename">English</label>
@@ -47,6 +48,7 @@
 		</h2>
 		<h2>
 		<label for="typing2">flying</label>
+		</div>
 		</h2>
             <form action="" id="inputForm">
                 <h1 class="pokedexholder">
@@ -58,7 +60,6 @@
 				</h1>
               </form>
         </p>
-        </h1>
 		</h1>
     </body>
 </html>
