@@ -13,8 +13,7 @@ h1 {
 }
 
 h2 {
-	font-weight: 300;
-    padding: 5px;
+    margin: 5px;
     text-align: center;
     background: #3498db;
     color: white;
@@ -27,7 +26,21 @@ div {
     border: 5px solid rgb(82 2 2);
     padding: 5px;
     margin: 5px;
-    cursor: pointer;
+}
+
+div2 {
+    background-color: red;
+    /* width: 50%; */
+    border: 5px solid rgb(82 2 2);
+    padding: 5px;
+    margin: 5px;
+}
+
+div3 {
+    background-color: black;
+    border: 5px solid rgb(82 2 2);
+    padding: 5px;
+    margin: 5px;
 }
 
 p {
@@ -41,28 +54,25 @@ p {
 .flex-container {
     flex-wrap: wrap;
     flex-direction: row;
+    flex-direction: row;
+    flex-grow: 2;
 }
 
 .flex-item {
-    background: #5673d3;
-    width: 50%;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
     text-align: center;
-    cursor: pointer;
 }
 
-.loader {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
-    animation: spin 2s linear infinite;
+.container {
+	display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+	flex-grow: 2;
 }
-  
+
+.item {
+    text-align: center;
+}
+
   /* Safari */
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
@@ -92,10 +102,8 @@ fieldset {
 }
 
 body {
-	/* background: #5673d3 url(./110699578-seamless-geometric-pattern-memphis-design-80s-and-90s-retro-style-abstract-fashion-background-vector.jpg) repeat-x; */
     background: grey;
 	font: Normal 100% 'Droid Serif', serif;
-	width: 100%;
 }
 
 button {
@@ -181,9 +189,4 @@ input[type=email]:focus,
 input[type=search]:focus,
 input[type=password]:focus {
     border-color: darkblue;
-}
-
-/* Make the highlighted access key stand out */
-.accesskey {
-    text-decoration: underline;
 }
