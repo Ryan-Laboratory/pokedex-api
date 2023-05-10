@@ -31,35 +31,26 @@
     <body>
 	<h1 class="flex-container">
         <div class="flex-item">This is Emolga entry
-
-        <!-- Create form which takes input id -->
-        <!-- Send form data as JSON to GET -->
-        <!-- Get the response and if success=true, reroute -->
-				<div class="flex-item">
-					<label for="search" >search</label>
-				</div>
-				
-        
-        <p>
-		<label for="pokename">English</label>
+        <div2 class="flex-container">
+		<label for="language">English</label>
 		<label for="pokename">Mouse</label>
-		<h2>
-		<label for="typing">Electric</label>
-		</h2>
-		<h2>
-		<label for="typing2">flying</label>
-		</div>
-		</h2>
-            <form action="" id="inputForm">
-                <h1 class="pokedexholder">
-				<div class="pokedexentry">
-                <label for="poke">Pokemon:</label>
-                <input type="text" accesskey="P" id="poke" name="pokename" autofocus placeholder="ditto"><br><br>
-                <input type="submit" id="submit" name="submit" value="Submit">
-                </div>
-				</h1>
-              </form>
-        </p>
-		</h1>
+		<div class="flex-item" style="background-color: yellow;" id="typing">Electric</div>
+		<div class="flex-item" style="background-color: cyan;" id="typing2">flying</div>
+		</div2>
+				<div2 class="container">
+				<div3 class="item">
+		height weight
+		</div3>
+		description
+		</div2>
+        </div>
+		
+						<div class="flex-item">
+					<label for="search" >search</label>
+						<form action="" id="inputForm">
+						<input type="text" accesskey="P" id="poke" name="pokename" autofocus placeholder="ditto">
+						<input type="submit" id="submit" name="submit" value="Submit">
+					</form>
+				</div>
     </body>
 </html>
