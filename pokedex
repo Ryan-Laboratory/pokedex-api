@@ -21,7 +21,61 @@
 <!-- return pkmn name -->
 		document.getElementById("pokename").innerHTML = obj.name;
 		document.getElementById("heightweight").innerHTML = obj.abilities[0].ability.name;
+		
+		<!-- the other info to pull out -->
+		for(let i = 0; i < obj.game_indices.length; i++){
+			console.log(obj.game_indices[i].version.name);
+			<!-- create a div for each game-->
+			<!-- obj.game_indices[i].version.name; -->
+		}
+		if(obj.forms.length > 1){
+			<!-- will have to check pokemon with multiple forms -->
+		}
+		for(let i = 0; i < obj.abilities.length; i++){
+			console.log(obj.abilities[i].ability.name);
+			<!-- create a div for each game-->
+			<!-- obj.game_indices[i].version.name; -->
+		}
+		obj.base_experience;
+		obj.height;
+		obj.weight;
+		for(let i = 0; i < obj.held_items.length; i++){
+			console.log(obj.held_items[i].item.name);
+			<!-- create a div for each game-->
+			<!-- obj.game_indices[i].version.name; -->
+			for(let n = 0; n < obj.held_items[i].version_details.length; n++){
+			console.log(obj.held_items[i].version_details[n].version.name);
+			}
+		}
+		obj.id;
+		obj.location_area_encounters;
+		for(let i = 0; i < obj.moves.length; i++){
+			console.log(obj.moves[i].move.name);
+			for(let n = 0; n < obj.moves[i].version_group_details.length; n++){
+			console.log(obj.moves[i].version_group_details[n].level_learned_at);
+			console.log(obj.moves[i].version_group_details[n].move_learn_method.name);
+			console.log(obj.moves[i].version_group_details[n].version_group.name);
+			}
+			
+			<!-- create a div for each game-->
+			<!-- obj.game_indices[i].version.name; -->
+			for(let n = 0; n < obj.held_items[i].version_details.length; n++){
+			console.log(obj.held_items[i].version_details[n].version.name);
+			}
+		}
+		obj.sprites.front_default;
+		for(let i = 0; i < obj.stats.length; i++){
+		obj.stats[i].base_stat;
+		obj.stats[i].effort
+		obj.stats[i].stat.name;
+		}
+		for(let i = 0; i < obj.types.length; i++){
+		obj.types[i].slot;
+		obj.types[i].type.name;
+		}
 <!-- } -->
+
+
 	
 	
 	}
